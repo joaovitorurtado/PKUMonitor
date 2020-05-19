@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ScanCodeForms"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             x:Class="ScanCodeForms.CadastroProduto" Title="Cadastrar Produto">
+    <ContentPage.BindingContext>
+        <models:NovoProduto/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout>
+            <Button Style="{StaticResource BtnNormal}" Image="supermarketbarcode.png" Text="Scanner" Clicked="Button_OnClicked" />
+            <Label Text="Nome produto"/>
+            <Entry Text="{Binding Produto.Nome}"/>
+            <Label Text="Tipo do produto (Granel ou Industrializado)"/>
+            <Entry Text="{Binding Produto.Tipo}"/>
+            <Label Text="Quantia de proteína em uma porção"/>
+            <Entry Text="{Binding Produto.QuantiaProteina}"/>
+            <Label Text="Quantia de uma porção"/>
+            <Entry Text="{Binding Produto.Porcao}"/>
+            <Button Style="{StaticResource BtnNormal}" Text="Criar cadastro" x:Name="btnCriarCadastro" Clicked="BtnCriarCadastro_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

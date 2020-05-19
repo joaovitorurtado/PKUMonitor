@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             x:Class="PKUMonitor.Vistas.Admin.ConsumirProduto" Title="Consumir Produto">
+    <ContentPage.BindingContext>
+        <models:NovoProduto/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Button Style="{StaticResource BtnNormal}" Image="supermarketbarcode.png" Text="Scanner" Clicked="Button_OnClicked"/>
+                <Label Text="Produto"/>
+                <Picker ItemsSource="{Binding Produto2}" SelectedItem="{Binding ProdutoSelecionado}"/>
+                <Button Text="Confirmar" x:Name="btnConfirmarProduto" Style="{StaticResource BtnNormal}" Clicked="BtnConfirmarProduto_Clicked"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             x:Class="PKUMonitor.Vistas.Admin.Periodos" Title="Periodos">
+    <ContentPage.BindingContext>
+        <models:PeriodoModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <ListView Grid.Row="0" ItemsSource="{Binding Periodos}" SelectedItem="{Binding PeriodoSelecionado}"/>
+            <Button Style="{StaticResource BtnAgregar}" Text="Agregar Periodo" x:Name="btnAgregarPeriodo" Clicked="BtnAgregarPeriodo_Clicked"/>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

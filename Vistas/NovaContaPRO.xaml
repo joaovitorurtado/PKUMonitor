@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             mc:Ignorable="d"
+             x:Class="PKUMonitor.Vistas.NovaContaPRO"
+             Title="Criar conta PRO">
+    <ContentPage.BindingContext>
+        <models:NovaContaAdminModel/>
+    </ContentPage.BindingContext>
+        <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+            <Label Text="Email" />
+            <Entry Placeholder="usuario@email.com" Text="{Binding Pessoa.Email}"/>
+            <Label Text="Senha"/>
+            <Entry IsPassword="True" Text="{Binding Pessoa.Password}"/>
+            <Label Text="Repita a senha"/>
+            <Entry IsPassword="True" Text="{Binding NovaContaAdminModel.Password2}"/>
+            <Label Text="Nome" />
+            <Entry Text="{Binding Pessoa.Nome}"/>
+            <Label Text="Sobrenome"/>
+            <Entry Text="{Binding Pessoa.Sobrenome}"/>
+            <Label Text="Proteína Máxima"/>
+            <Entry Text="{Binding Pessoa.Proteina}"/>
+            <Button Style="{StaticResource BtnNormal}" Text="Criar Conta" x:Name="btnCriarConta" Clicked="BtnCriarConta_Clicked"/>
+        </StackLayout>
+      </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

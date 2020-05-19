@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PKUMonitor.Vistas.Termino"
+             Title=" Termos e condições">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In ut purus eget nibh commodo semper in ut orci. Cras ante erat, porta in sodales a, suscipit vel massa. Nulla vulputate turpis in metus vulputate gravida. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi eget mi ac magna vulputate feugiat. Suspendisse potenti. Aliquam molestie augue et sapien sagittis cursus. Etiam sit amet convallis ipsum.
+
+Vestibulum iaculis nibh ut dignissim molestie. Ut congue, sapien et vestibulum vestibulum, felis justo egestas erat, quis porta ligula purus a felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Fusce laoreet enim tellus, ut vestibulum nisl blandit eget. Morbi ut orci tincidunt, cursus nisi vitae, rutrum lorem. Nulla vitae massa posuere, faucibus elit sit amet, ultrices leo. Duis consectetur urna non quam commodo, non efficitur ligula pharetra.
+
+Duis eget tempor lacus. Fusce convallis dolor tellus, at pharetra elit vehicula in. Quisque eleifend, mi vitae pretium congue, massa sapien pulvinar ligula, vel sodales ex mauris ut ex. Sed et felis mollis, tristique risus ac, pretium ex. Nullam vel eros mi. Suspendisse potenti. Praesent congue sem sit amet euismod malesuada. Donec fermentum sem eros, vitae lobortis nulla sagittis vel.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed et metus at nunc molestie euismod. Integer tempor, nunc finibus aliquet fermentum, sem neque mollis sapien, eget vestibulum augue quam in ligula. Aenean tincidunt egestas sapien non fermentum. Quisque euismod ac quam id dignissim. Donec dui arcu, luctus ac nibh vel, tempus tempor nibh. Curabitur mattis metus non eros rhoncus blandit ac nec sem. Maecenas urna urna, mattis eu massa in, vulputate vehicula velit. Integer imperdiet mauris nec posuere iaculis. Mauris a orci at lectus lacinia gravida nec non nibh. Aenean eget vestibulum eros. Vivamus dignissim orci a mi tincidunt, in pulvinar ligula gravida. Suspendisse eget imperdiet erat, at fermentum nisi. Maecenas euismod purus nec convallis mollis.
+
+Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis commodo ut lectus vel eleifend. Vestibulum blandit eleifend quam, quis condimentum nunc dapibus in. Nulla vitae felis lacus. Sed venenatis mi quis quam gravida, nec faucibus nisl bibendum. Suspendisse vel ultrices libero, quis mattis tellus. Quisque laoreet tincidunt diam, sed scelerisque odio tincidunt in. Maecenas eu tellus id nibh porta porta eu ut purus. Curabitur eu odio lacus. Morbi at odio quis mi euismod laoreet. Maecenas felis tortor, dignissim dignissim mollis vitae, congue malesuada massa. Praesent lectus sem, tempus eu scelerisque eget, elementum quis augue."/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

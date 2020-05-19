@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             xmlns:models2="clr-namespace:PKUMonitor.Entidades"
+             mc:Ignorable="d"
+             x:Class="PKUMonitor.Vistas.Admin.MenuPRO"
+             Title="Menu">
+    <ContentPage.BindingContext>
+        <models:MenuAdminModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" x:Name="MainLabel" Text="{Binding Progress, Source ={x:Reference MainProgressBar}}" FontSize="20" TextColor="Navy" HorizontalOptions="Center"/>
+                <ProgressBar Grid.Row="1" x:Name ="MainProgressBar" Progress="0.2"  WidthRequest="250" HeightRequest="20" ProgressColor="Blue"/>
+            </Grid>
+            <Button x:Name="btnVecinos" Clicked="BtnVecinos_Clicked"  Style="{StaticResource BtnNormal}" BackgroundColor="{StaticResource DarkPrimaryColor}" Image="diet.png" Text="Cadastro Produto" Grid.Row="1"/>
+            <Button x:Name="btnConsumirProduto" Clicked="BtnConsumirProduto_Clicked" Style="{StaticResource BtnNormal}" Image="dinner.png" Text="Consumir Produto" Grid.Row="2"/>
+            <Button x:Name="btnGastos" Clicked="BtnGastos_Clicked" Style="{StaticResource BtnNormal}" Image="problemm.png" Text="Em construção" Grid.Row="3"/>
+            <Button x:Name="btnBalance" Clicked="BtnBalance_Clicked" Style="{StaticResource BtnNormal}" Image="reloadd.png" Text="Restaurar Proteínas" Grid.Row="4"/>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PKUMonitor.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="DarkPrimaryColor">#1976D2</Color>
+            <Color x:Key="LightPrimaryColor">#BBDEFB</Color>
+            <Color x:Key="PrimaryColor">#2196F3</Color>
+            <Color x:Key="TextIconsColor">#FFFFFF</Color>
+            <Color x:Key="AnccentColor">#4CAF50</Color>
+            <Color x:Key="PrimaryTextColor">#212121</Color>
+            <Color x:Key="SecondaryTextColor">#757575</Color>
+            <Color x:Key="DividerColor">#BDBDBD</Color>
+
+            <Style x:Key="TextPKU" TargetType="Label">
+                <Setter Property="TextColor" Value="{StaticResource DarkPrimaryColor}"/>
+            </Style>
+            <Style x:Key="TextGastos" TargetType="Label">
+                <Setter Property="TextColor" Value="Red"/>
+            </Style>
+            <Style x:Key="TextTotales" TargetType="Label">
+                <Setter Property="TextColor" Value="Green"/>
+            </Style>
+            <Style x:Key="TextTitulo" TargetType="Label">
+                <Setter Property="FontSize" Value="Large"/>
+                <Setter Property="FontAttributes" Value="Italic"/>
+            </Style>
+            
+            <Style x:Key="BtnNormal" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource DarkPrimaryColor}"/>
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+                <Setter Property="Margin" Value="30,0"/>
+                <Setter Property="TextColor" Value="{StaticResource TextIconsColor}"/>
+            </Style>
+
+            <Style x:Key="BtnAcentuado" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="BackgroundColor" Value="{StaticResource AnccentColor}"/>
+            </Style>
+            <Style x:Key="BtnGuardar" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="Text" Value="Guardar"/>
+                 <Setter Property="Text" Value="Guardar.png"/>
+            </Style>
+            <Style x:Key="BtnEliminar" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="Text" Value="Eliminar"/>
+                <Setter Property="Text" Value="Eliminar.png"/>
+            </Style>
+            <Style x:Key="BtnAgregar" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="Text" Value="Agregar"/>
+                <Setter Property="Text" Value="Agregar.png"/>
+            </Style>
+            <Style x:Key="BtnBuscar" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="Text" Value="Buscar"/>
+                <Setter Property="Image" Value="Buscar.png"/>
+            </Style>
+            <Style x:Key="BtnGrafico" TargetType="Button" BasedOn="{StaticResource BtnNormal}">
+                <Setter Property="Text" Value="Ver grafico"/>
+                <Setter Property="Image" Value="grafico.png"/>
+            </Style>
+            <Style TargetType="ContentPage">
+                <Setter Property="BackgroundColor" Value="White"/>
+            </Style>
+            <Style TargetType="Entry">
+                <Setter Property="HorizontalOptions" Value="FillAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

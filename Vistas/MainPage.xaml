@@ -1,0 +1,38 @@
+﻿<!--<?xml version="1.0" encoding="utf-8" ?>-->
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:local="clr-namespace:PKUMonitor"
+             xmlns:models="clr-namespace:PKUMonitor.Modelos"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="PKUMonitor.MainPage" Title="Início da sessão">
+    <ContentPage.BindingContext>
+        <models:LoginModel/>
+    </ContentPage.BindingContext>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height ="5*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+            <RowDefinition Height ="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"  BackgroundColor="{StaticResource DarkPrimaryColor}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="0" Source="logo.png"/>
+        </Grid>
+        <Label Grid.Row="1" HorizontalOptions="Center" Text="Email"/>
+        <Entry Grid.Row="2" Placeholder="usuario@email.com" Text="{Binding Email}" HorizontalTextAlignment="Center" Margin="40,0"/>
+        <Label Grid.Row="3" HorizontalOptions="Center" Text="Password"/>
+        <Entry Grid.Row="4" IsPassword="True" Text="{Binding Password}" HorizontalTextAlignment="Center" Margin="40,0"/>
+        <Button Grid.Row="5" Style="{StaticResource BtnNormal}" Text="Iniciar sessão" x:Name="BtnIniciarSessao" Clicked ="BtnIniciarSessao_Clicked" Margin="50,0"/>
+        <Button Grid.Row="6" Style="{StaticResource BtnAcentuado}" Text="Criar conta" x:Name="BtnCriarConta" Clicked="BtnCriarConta_Clicked" Margin="50,0"/>
+    </Grid>
+
+</ContentPage>
